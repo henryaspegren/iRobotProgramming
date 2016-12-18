@@ -15,7 +15,7 @@ def demo_cliff_sensors(duration=60):
 
 	time.sleep(1)
 
-	# Report bumper hits and wall proximity for 30 seconds
+	# Report for 30 seconds
 	start_time = time.time()
 	while (time.time() - start_time) < duration:
 		# this requests a new packet from the robot
@@ -56,7 +56,7 @@ def demo_light_bumper_sensors(duration=60):
 	time.sleep(1)
 
 
-	# Report bumper hits and wall proximity for 30 seconds
+	# Report for 30 seconds
 	start_time = time.time()
 	while (time.time() - start_time) < duration:
 		# this requests a new packet from the robot
@@ -96,7 +96,7 @@ def demo_wheel_drop(duration=60):
 	time.sleep(1)
 
 
-	# Report bumper hits and wall proximity for 30 seconds
+	# Report for 30 seconds
 	start_time = time.time()
 	while (time.time() - start_time) < duration:
 		# this requests a new packet from the robot
@@ -128,7 +128,7 @@ def demo_physical_bumper(duration=60):
 	time.sleep(1)
 
 
-	# Report bumper hits and wall proximity for 30 seconds
+	# Report for 30 seconds
 	start_time = time.time()
 	while (time.time() - start_time) < duration:
 		# this requests a new packet from the robot

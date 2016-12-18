@@ -30,9 +30,15 @@ import warnings
 import time
 import pkg_resources
 
+
+# CHANGE THIS PORT VARIABLE TO THE ONE THE ROBOT IS ON
+# your laptop may be using a different port
+PORT = '/dev/tty.usbserial-DA01NYS1'
+
+
 class Robot(object):
 
-    def __init__(self, port='/dev/tty.usbserial-DA01NYS1', baud=115200):
+    def __init__(self, port=PORT, baud=115200):
         '''
         Connects to the Create2 on the specified port at the specified baud rate.
         '''

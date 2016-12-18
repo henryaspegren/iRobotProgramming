@@ -20,20 +20,20 @@ time.sleep(1)
 # # Tell the Create2 to turn right slowly
 # bot.setTurnSpeed(-50)
 
-# time.sleep(1)
+time.sleep(1)
 
-# bot.setForwardSpeed(100)
+bot.setForwardSpeed(100)
 
 
-# time.sleep(1)
+time.sleep(1)
 
-# bot.setForwardSpeed(-100)
+bot.setForwardSpeed(-100)
 
-# # Wait a second
-# time.sleep(1)
+# Wait a second
+time.sleep(1)
 
-# # Stop
-# bot.setTurnSpeed(0)
+# Stop
+bot.setForwardSpeed(0)
 
 # Report bumper hits and wall proximity for 30 seconds
 start_time = time.time()
