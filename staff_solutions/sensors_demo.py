@@ -8,9 +8,7 @@ Position the robot over the edge of something and see how the values change.
 
 Prints outputs of the sensor values for duration seconds (defaults to 60)
 """
-def demo_cliff_sensors(duration=60):
-	bot = Robot()
-
+def demo_cliff_sensors(bot, duration=60):
 	bot.playNote('A4', 100)
 
 	time.sleep(1)
@@ -37,22 +35,13 @@ def demo_cliff_sensors(duration=60):
 		time.sleep(0.5)
 
 
-
-	# Close the connection
-	bot.close()
-
-
-
 """
 This function is used to demo the light bumper sensors.
 
 Prints outputs of sensor values for duration seconds (defaults to 60)
 """
-def demo_light_bumper_sensors(duration=60):
-	bot = Robot()
-
+def demo_light_bumper_sensors(bot, duration=60):
 	bot.playNote('B4', 100)
-
 	time.sleep(1)
 
 
@@ -77,20 +66,12 @@ def demo_light_bumper_sensors(duration=60):
 		# sleep half a second to make this slower
 		time.sleep(0.5)
 
-
-
-	# Close the connection
-	bot.close()
-
-
 """
 This function is used to demo the wheel drop sensors.
 
 Prints outputs of sensor values for duration seconds (defaults to 60)
 """
-def demo_wheel_drop(duration=60):
-	bot = Robot()
-
+def demo_wheel_drop(bot, duration=60):
 	bot.playNote('C4', 100)
 
 	time.sleep(1)
@@ -108,21 +89,12 @@ def demo_wheel_drop(duration=60):
 		# sleep half a second to make this slower
 		time.sleep(0.5)
 
-
-
-	# Close the connection
-	bot.close()
-
-
-
 """
 This function is used to demo the physical bumper sensors.
 
 Prints outputs of sensor values for duration seconds (defaults to 60)
 """
-def demo_physical_bumper(duration=60):
-	bot = Robot()
-
+def demo_physical_bumper(bot, duration=60):
 	bot.playNote('D4', 100)
 
 	time.sleep(1)
@@ -139,10 +111,5 @@ def demo_physical_bumper(duration=60):
 		print '______________'
 		# sleep half a second to make this slower
 		time.sleep(0.5)
-
-
-
-	# Close the connection
-	bot.close()
 
 
