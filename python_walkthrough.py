@@ -1,4 +1,1 @@
-
-x = "Hello, world"
-
-print type(x)
+print 'Hello, world!'
