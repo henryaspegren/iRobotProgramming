@@ -1,3 +1,4 @@
+from __future__ import print_function
 import time
 from Tkinter import *
 from breezycreate2 import Robot
@@ -11,7 +12,6 @@ class SimpleController(object):
         # - create a robot and store it as an instance variable
         # - create instance variables for the different parameters we want to keep track of
         # 
-
 
         # this sets up the GUI
         self.master = Tk()
@@ -48,13 +48,17 @@ class SimpleController(object):
         self.move_backward.pack(fill="x")
         self.move_turn_right.pack(fill="x")
         self.move_turn_left.pack(fill="x")
+
+        self.master.bind("<KeyPress-Left>", lambda event: self.move_forward_cmd() )
+        self.master.bind("<KeyRelease-Left>", lambda event: print('released') )
         mainloop()
 
+
     def move_forward(self):
-        # your code here
-        #
-        #
         return None
+
+    def move_forward_cmd(self):
+        print('here')
 
     def move_backward(self):
         # your code here

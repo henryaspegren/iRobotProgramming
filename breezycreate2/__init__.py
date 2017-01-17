@@ -33,7 +33,7 @@ import pkg_resources
 
 # CHANGE THIS PORT VARIABLE TO THE ONE THE ROBOT IS ON
 # your laptop may be using a different port
-PORT = '/dev/tty.usbserial-DA01NYS1'
+PORT = '/dev/tty.usbserial-DA01NQXP'
 
 
 class Robot(object):
